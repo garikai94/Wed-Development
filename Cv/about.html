@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            height: 100vh;
+            display: grid;
+            grid-template-columns: 2fr 1.5fr;
+            grid-template-rows: 1fr;
+            column-gap: 20px;
+            background-color: rgb(245, 247, 249);
+
+        }
+        div .navbar{
+            font-size: 20px;
+            display: flex;
+            gap: 25px;
+            padding-bottom: 50px;
+            background-color: rgb(253, 250, 247);
+        }
+        div .navbar > a{
+            text-decoration: none; 
+            color: darkolivegreen;
+        }
+       /* .dropdown{
+            font-size: 20px;
+            width: 200px;
+            border: none;
+            border-radius: 4px;
+            background-color: rgb(253, 250, 247);
+            appearance: none;
+            background-image: url('arrow.png');
+            background-position: 95%;
+            color: darkolivegreen;
+        }*/
+        div .navbar > a:hover{
+           background-color: cornsilk;
+        }
+        .nav-name{
+            color: darkolivegreen;
+            font-size: 25px;
+            background-color: rgb(252, 250, 249);
+            padding-left: 12px;
+            border-right: 12px;
+        }
+        img{
+            width:100%;
+            border: 15px;
+            padding-top: 34px;
+            
+        }
+        h2{
+            font-size: 2rem;
+            color: brown;
+        }
+        h2 span{
+            font-size: 1rem;
+            font-family: Arial, Helvetica, sans-serif;
+            color: rgb(133, 113, 113);
+            background: rgb(244, 239, 239);
+            padding: 10px;
+            text-align: center;
+        }
+        p{
+        text-align: center;
+        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        div a > button{
+            border: none;
+            padding: 15px;
+            border-radius: 20px;
+            font-size: 1rem;
+            font-family:Arial, Helvetica, sans-serif;
+            color: rgb(78, 3, 77);
+        }
+        @media (max-width: 1250px) {
+      .container {
+        flex-direction: column;
+        height: 100%;
+      }
+    }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <a href="https://www.linkedin.com/in/garikaitaf94/">About</a>
+            <a href="https://mail.google.com/mail/u/1/#inbox">Contact</a>
+            <a href="https://github.com/garikai94">Work</a>
+           <!-- <select class="dropdown">
+                <option value="GitHub"><a href="github">Work</a>Hey</option>
+            </select>-->
+        </div>
+
+        <div class="nav-name">Tafadzwa Garikai Matanhatu</div>
+
+        <img src="/assets/us.jpg" alt="background photo"> 
+        <div>
+            <h2>Tafadzwa G Matanhatu
+                - <br><span>I CREAT WEB AND START UP SOFTWARE PROGRAMS</span>
+            </h2>
+        <br><br><br><br>
+            <p>Junior Software Developer with profient experience in
+                design and development of Object-Oriented Software
+                Application with expertise in Object Oriented
+                Programming using Java, Python, application of
+                Algorithms and Data Structures, also writing
+                programs that interact with the database using SQL and
+                managed to do HTML, CSS and Bootstrap fundamentals</p>
+               
+                <a href="index.html"><button>LET'S START</button></a>
+        </div>
+    </div>
+</body>
+</html>
